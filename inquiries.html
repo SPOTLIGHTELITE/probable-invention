@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inquiries | Spotlight Elite Kenya</title>
+  <meta name="description" content="Contact Spotlight Elite Private Investigators Kenya. Submit inquiries for surveillance, investigations, or professional security services in Nairobi and across East Africa." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <img src="Images/logo.png" alt="Spotlight Elite Logo" class="logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="inquiries.html">Inquiries</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Inquiry Section -->
+  <section class="inquiry-page">
+    <h1>Send Us a Confidential Inquiry</h1>
+    <p>We're available Monday to Saturday, 8:00 AM to 5:00 PM. Your information is kept 100% private and confidential.</p>
+
+    <div class="inquiry-wrapper">
+      <!-- Inquiry Form -->
+      <form class="inquiry-form" action="https://formspree.io/f/mnqevjpo" method="POST">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="subject">Subject *</label>
+        <input type="text" id="subject" name="subject" required />
+
+        <label for="message">Your Message *</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Submit Inquiry</button>
+      </form>
+
+      <!-- Contact Info + Google Map -->
+      <div class="contact-details">
+        <h2>Our Office</h2>
+        <p>📍 Woodvale Place, Nairobi, Kenya</p>
+        <p>📞 <a href="tel:+254724613318">0724 613 318</a></p>
+        <p>📧 <a href="mailto:spotlighteliteinvestigators@gmail.com">spotlighteliteinvestigators@gmail.com</a></p>
+        <p>🕒 Mon–Sat: 8:00 AM – 5:00 PM</p>
+        <iframe src="https://www.google.com/maps?q=Woodvale+Place+Nairobi&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254724613318" class="whatsapp-float" target="_blank">💬</a>
+
+</body>
+</html>
