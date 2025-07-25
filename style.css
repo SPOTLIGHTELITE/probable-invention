@@ -141,3 +141,31 @@ footer {
 .about-page ul li {
   margin: 5px 0;
 }
+.services-page {
+  max-width: 950px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  line-height: 1.8;
+  color: #002147;
+}
+
+.services-page h1 {
+  font-size: 2.2em;
+  color: #002147;
+  margin-bottom: 20px;
+}
+
+.services-page h2 {
+  margin-top: 30px;
+  color: goldenrod;
+}
+
+.services-page h3 {
+  margin-top: 40px;
+  color: #003366;
+}
+
+.services-page p, .services-page ul {
+  margin-bottom: 20px;
+}
