@@ -211,3 +211,62 @@ footer {
   color: #002147;
   font-weight: bold;
 }
+.inquiry-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  background: #fff;
+  color: #002147;
+}
+
+.inquiry-page h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.inquiry-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.inquiry-form, .contact-details {
+  flex: 1 1 45%;
+}
+
+.inquiry-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.inquiry-form button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: gold;
+  color: #002147;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-details h2 {
+  margin-bottom: 15px;
+  color: goldenrod;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+}
