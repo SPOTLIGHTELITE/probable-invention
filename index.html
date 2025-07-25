@@ -1,24 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Spotlight Elite Private Investigators Kenya - Professional Investigation, Surveillance, and Security Services in Nairobi." />
+  <title>Spotlight Elite Kenya | Private Investigators Nairobi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-<div class="slideshow-container">
-  <img class="slides" src="images/slide1.jpg" alt="Slide 1">
-  <img class="slides" src="images/slide2.jpg" alt="Slide 2">
-  <img class="slides" src="images/slide3.jpg" alt="Slide 3">
-  <img class="slides" src="images/slide4.jpg" alt="Slide 4">
-</div>
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <img src="Images/logo.png" alt="Spotlight Elite Logo" class="logo" />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Blog</a>
+        <a href="#">Inquiries</a>
+      </nav>
+    </div>
+  </header>
 
-<script>
-  let slideIndex = 0;
-  const slides = document.getElementsByClassName("slides");
+  <!-- Slideshow -->
+  <section class="slideshow">
+    <div class="slides fade">
+      <img src="Images/slide1.jpg" alt="Infidelity Investigation">
+      <div class="caption">Infidelity & Surveillance</div>
+    </div>
+    <div class="slides fade">
+      <img src="Images/slide2.jpg" alt="Security Services">
+      <div class="caption">Security & Protection Services</div>
+    </div>
+    <div class="slides fade">
+      <img src="Images/slide3.jpg" alt="Ethical Hacking">
+      <div class="caption">Cyber & Data Investigation</div>
+    </div>
+  </section>
 
-  function showSlides() {
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  <!-- Introduction -->
+  <section class="intro">
+    <h1>Welcome to Spotlight Elite Investigators</h1>
+    <p>We are Kenya’s leading private investigation and security company, based in Nairobi. We provide professional, confidential, and effective services across Kenya.</p>
+  </section>
+
+  <!-- Contact & Map -->
+  <footer>
+    <div class="footer-content">
+      <div class="inquiry-form">
+        <h3>Send an Inquiry</h3>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>📍 Woodvale Place, Nairobi, Kenya</p>
+        <p>📞 <a href="tel:+254724613318">0724 613 318</a></p>
+        <p>📧 <a href="mailto:spotlighteliteinvestigators@gmail.com">spotlighteliteinvestigators@gmail.com</a></p>
+        <p>🕒 Mon–Sat: 8am – 5pm</p>
+        <iframe src="https://www.google.com/maps?q=Woodvale+Place+Nairobi&output=embed" width="100%" height="200" style="border:0;"></iframe>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/254724613318" class="whatsapp-float" target="_blank">
+    💬
+  </a>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      const slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
     }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1; }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change every 3 seconds
-  }
+  </script>
 
-  showSlides();
-</script>
+</body>
+</html>
