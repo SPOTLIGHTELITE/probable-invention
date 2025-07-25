@@ -120,4 +120,24 @@ footer {
   text-decoration: none;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   z-index: 100;
+.about-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  line-height: 1.8;
+  background: #fff;
+  color: #002147;
+}
 
+.about-page h1, .about-page h2 {
+  color: #002147;
+  margin-top: 30px;
+}
+
+.about-page ul {
+  padding-left: 20px;
+}
+
+.about-page ul li {
+  margin: 5px 0;
+}
